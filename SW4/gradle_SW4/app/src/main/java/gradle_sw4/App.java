@@ -19,6 +19,9 @@ import com.indvd00m.ascii.render.api.IContextBuilder;
 import com.indvd00m.ascii.render.api.IRender;
 import com.indvd00m.ascii.render.elements.PseudoText;
 
+import org.fusesource.jansi.Ansi;
+import org.fusesource.jansi.AnsiConsole;
+
 public class App {
     public String getGreeting() {
         return "Hello World!";
@@ -26,13 +29,15 @@ public class App {
 
     public static void main(String[] args) throws IOException {
         System.out.println(new App().getGreeting());
+        AnsiConsole.systemInstall();
 
         IRender render = new Render();
 		IContextBuilder builder = render.newBuilder();
 		builder.width(120).height(20);
 		builder.element(new PseudoText("DevOps SW4"));
 		ICanvas canvas = render.render(builder.build());
-		String s = canvas.getText();
+		// Hier wird Jansi verwendet, um den String zu formatieren
+        String s = Ansi.ansi().fg(Ansi.Color.BLUE).a(canvas.getText()).reset().toString();
 		System.out.println(s);
 
         // PDF Box
@@ -48,6 +53,20 @@ public class App {
         contentStream.close();
         helloPdf.save(new File("simple.pdf"));
         helloPdf.close();
+
+
+        // Verwenden Sie die Ansi-Klasse, um einen String mit ANSI-Codes zu erstellen
+        String redText = Ansi.ansi().fg(Ansi.Color.RED).a("Roter Text").reset().toString();
+        String greenText = Ansi.ansi().fg(Ansi.Color.GREEN).a("Gruener Text").reset().toString();
+
+        // Ausgabe des formatierten Strings in der Konsole
+        System.out.println(redText);
+        System.out.println(greenText);
+        
+
+
+        // Deinitialisiere Jansi
+        AnsiConsole.systemUninstall();
 
     }
 
