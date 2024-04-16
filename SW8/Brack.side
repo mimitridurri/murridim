@@ -1,0 +1,223 @@
+{
+  "id": "aa6f06dc-f6a7-4fc9-9bf5-6db16ea75293",
+  "version": "2.0",
+  "name": "Brack",
+  "url": "https://www.brack.ch",
+  "tests": [{
+    "id": "d6f8e638-fe2e-403d-b568-41c58b72e171",
+    "name": "first try",
+    "commands": [{
+      "id": "abb52ab8-796b-4d1c-a834-d9e79e60100c",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9e7b79a5-a157-4612-a26a-e9f27b518ae8",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1288x1073",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6f62bb91-c328-4e16-9afc-1f22060fa8df",
+      "comment": "",
+      "command": "click",
+      "target": "id=searchFieldId",
+      "targets": [
+        ["id=searchFieldId", "id"],
+        ["name=search", "name"],
+        ["css=#searchFieldId", "css:finder"],
+        ["xpath=//input[@id='searchFieldId']", "xpath:attributes"],
+        ["xpath=//header[@id='b2c-header-container']/div/div[3]/div/div/div[2]/form/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "05fe1950-3b1b-44bc-a48b-a10899547ce7",
+      "comment": "",
+      "command": "type",
+      "target": "id=searchFieldId",
+      "targets": [
+        ["id=searchFieldId", "id"],
+        ["name=search", "name"],
+        ["css=#searchFieldId", "css:finder"],
+        ["xpath=//input[@id='searchFieldId']", "xpath:attributes"],
+        ["xpath=//header[@id='b2c-header-container']/div/div[3]/div/div/div[2]/form/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Badeschuhe Sandale Marine/Grün Gr. 26-27"
+    }, {
+      "id": "985d20c1-b72e-4f7a-bf7d-f5fce4f6336c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.bhaSdM3P",
+      "targets": [
+        ["css=.bhaSdM3P", "css:finder"],
+        ["xpath=//a[@id='searchFieldId-suggest-option-1-product']/div/div", "xpath:idRelative"],
+        ["xpath=//a/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1e6d8c5b-9007-4365-a4e9-f70a2419aa03",
+      "comment": "",
+      "command": "click",
+      "target": "css=.bpaTv2dl",
+      "targets": [
+        ["css=.bpaTv2dl", "css:finder"],
+        ["xpath=//main[@id='b2c-pdp-container']/article/div[2]/div/div/div/div/div/div/div[2]/div[2]/div/div/div[3]/div/button/span/span", "xpath:idRelative"],
+        ["xpath=//div[3]/div/button/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7bde63c2-d1c1-4919-894f-236ba0a620f7",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.bhakIVLc svg",
+      "targets": [
+        ["css=.bhakIVLc svg", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "b2b960b9-17d9-4dae-9a46-a6411dcc0f02",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.bhakIVLc svg",
+      "targets": [
+        ["css=.bhakIVLc svg", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "bbc74ac3-6301-4599-b449-455d542f6e9a",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.bhakIVLc svg",
+      "targets": [
+        ["css=.bhakIVLc svg", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "048b8913-05ac-4ade-9b4a-7523facf569f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.bhakIVLc svg",
+      "targets": [
+        ["css=.bhakIVLc svg", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "0ae46a81-4439-4263-811c-b50833067f90",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.bhakIVLc svg",
+      "targets": [
+        ["css=.bhakIVLc svg", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "225ec43f-8fbf-4f07-9763-34c3f5240347",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.bhakIVLc svg",
+      "targets": [
+        ["css=.bhakIVLc svg", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "1a5d375c-ca54-4e22-a24b-fe88031ebbd0",
+      "comment": "check if the right article is in basket",
+      "command": "verifyText",
+      "target": "css=.bcaop7hM > .bcasCHgA",
+      "targets": [
+        ["css=.bcaop7hM > .bcasCHgA", "css:finder"],
+        ["xpath=//main[@id='b2c-checkout-container']/div/div/div/div/div/table/tbody/tr/td/article/div/a[2]/span", "xpath:idRelative"],
+        ["xpath=//article/div/a[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Badeschuhe Sandale Marine/Grün Gr. 26-27')]", "xpath:innerText"]
+      ],
+      "value": "Badeschuhe Sandale Marine/Grün Gr. 26-27"
+    }, {
+      "id": "9cbc2aa9-128b-4e21-9abe-da7014884f20",
+      "comment": "Check Color",
+      "command": "verifyText",
+      "target": "css=div:nth-child(3) > strong",
+      "targets": [
+        ["css=div:nth-child(3) > strong", "css:finder"],
+        ["xpath=//main[@id='b2c-checkout-container']/div/div/div/div/div/table/tbody/tr/td/article/div/div/strong", "xpath:idRelative"],
+        ["xpath=//strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'Grün / Marineblau')]", "xpath:innerText"]
+      ],
+      "value": "Grün / Marineblau"
+    }, {
+      "id": "f1311852-b237-451b-b511-2ecb875bdcfd",
+      "comment": "check amount",
+      "command": "verifyValue",
+      "target": "id=cart-quantity-1520516",
+      "targets": [
+        ["id=cart-quantity-1520516", "id"],
+        ["name=cart-quantity-1520516", "name"],
+        ["css=#cart-quantity-1520516", "css:finder"],
+        ["xpath=//input[@id='cart-quantity-1520516']", "xpath:attributes"],
+        ["xpath=//main[@id='b2c-checkout-container']/div/div/div/div/div/table/tbody/tr/td[4]/div/label/input", "xpath:idRelative"],
+        ["xpath=//label/input", "xpath:position"]
+      ],
+      "value": "1"
+    }, {
+      "id": "93e7cf2c-2ff2-410c-9c41-6b57d2d9d6a2",
+      "comment": "",
+      "command": "click",
+      "target": "id=Giftwrapping-dropdownTitle-1520516",
+      "targets": [
+        ["id=Giftwrapping-dropdownTitle-1520516", "id"],
+        ["css=#Giftwrapping-dropdownTitle-1520516", "css:finder"],
+        ["xpath=//button[@id='Giftwrapping-dropdownTitle-1520516']", "xpath:attributes"],
+        ["xpath=//main[@id='b2c-checkout-container']/div/div/div/div/div/table/tbody/tr/td[3]/div/button/span/button", "xpath:idRelative"],
+        ["xpath=//span/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "68476a56-f30b-44d3-a1ca-09081ebbaa4d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.MuiButtonBase-root:nth-child(2) .bcaZ_jsp",
+      "targets": [
+        ["css=.MuiButtonBase-root:nth-child(2) .bcaZ_jsp", "css:finder"],
+        ["xpath=//main[@id='b2c-checkout-container']/div/div/div/div/div/table/tbody/tr/td[3]/div/button/span/div/button[2]/span/span/span/span", "xpath:idRelative"],
+        ["xpath=//button[2]/span/span/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c651dd64-4077-4423-99e7-f030fab8204f",
+      "comment": "Check wrapping",
+      "command": "verifyText",
+      "target": "css=.bcal9DpE",
+      "targets": [
+        ["css=.bcal9DpE", "css:finder"],
+        ["xpath=//button[@id='Giftwrapping-dropdownTitle-1520516']/span[2]", "xpath:idRelative"],
+        ["xpath=//button/span[2]", "xpath:position"]
+      ],
+      "value": "Geschenkverpackung White"
+    }, {
+      "id": "797fb6ad-b471-4df0-b871-ebd67be253f6",
+      "comment": "Check wrapping Cost",
+      "command": "verifyText",
+      "target": "css=.bcaQ5C2p .bcajJbSI",
+      "targets": [
+        ["css=.bcaQ5C2p .bcajJbSI", "css:finder"],
+        ["xpath=//main[@id='b2c-checkout-container']/div/div/div/div/div/table/tbody/tr/td[6]/div/div/span/span/span", "xpath:idRelative"],
+        ["xpath=//div/div/span/span/span", "xpath:position"]
+      ],
+      "value": "4.90"
+    }]
+  }],
+  "suites": [{
+    "id": "92a1e8c9-3196-4cba-9e7a-3df5f0a8c403",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["d6f8e638-fe2e-403d-b568-41c58b72e171"]
+  }],
+  "urls": ["https://www.brack.ch/"],
+  "plugins": []
+}
